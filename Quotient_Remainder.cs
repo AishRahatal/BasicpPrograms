@@ -13,6 +13,8 @@ namespace Quotientandremainder
             int dividend = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter divisor:");
             int divisor = Convert.ToInt32(Console.ReadLine());
+            if (dividend > 0 && divisor > 0)
+           {
             quotient = dividend / divisor;
             remainder = dividend % divisor;
             Console.WriteLine("-------------------------------------");
@@ -20,6 +22,12 @@ namespace Quotientandremainder
             Console.WriteLine("Quotient = " + quotient);
             Console.WriteLine("Remainder = " + remainder);
             Console.ReadLine();
+            }
+            else
+            {
+                Console.WriteLine("Input is invalid !, Enter values for dividend and divisor greater than 0");
+
+            }
         }
     }
 }
