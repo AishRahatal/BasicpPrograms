@@ -10,6 +10,7 @@ namespace leap_year
 
             Console.WriteLine("Enter year :");
             int year= Convert.ToInt32(Console.ReadLine());
+            if(year>0)
             float rm1 = year % 4;
             float rm2 = year % 400;
             if ( rm1== 0 || rm2==0)
@@ -21,7 +22,12 @@ namespace leap_year
             {
                 Console.WriteLine(year + "\tis not a Leap year");
             }
-                    
+        }
+            else
+            {
+                Console.WriteLine("Entered value is invalid for year");
+
+            }        
         }
     }
 }
