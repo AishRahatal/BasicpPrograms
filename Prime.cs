@@ -9,16 +9,23 @@ namespace primefactors
             Console.WriteLine("Prime factors program");
             Console.WriteLine("Enter number:");
             int n = Convert.ToInt32(Console.ReadLine());
-            int[] prime = { 0 };
-            Console.WriteLine("Prime factors of :" + n + "\tare :");
-            for (int i = 2; i <= n; i++)
+            if (n > 0)
             {
-                while (n % i == 0)
+            Console.WriteLine("Prime factors of :" + n + "\tare :");
+                for (int i = 2; i <= n; i++)
                 {
-                    Console.WriteLine(i);
+                    while (n % i == 0)
+                    {
+                        Console.WriteLine(i);
 
-                    n = n / i;
+                        n = n / i;
+                    }
                 }
+            }
+            else
+            {
+                Console.WriteLine("Input is invalid ");
+
             }
 
         }
