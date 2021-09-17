@@ -14,7 +14,8 @@ namespace SwapNumbers
             int second_num = Convert.ToInt32(Console.ReadLine());
             int temp;
             Console.WriteLine("-------------------------------------");
-
+             if (first_num > 0 || second_num > 0)
+            {
             Console.WriteLine("Numbers before Swap : first number="+first_num +"\tsecond number=" +second_num);
             Console.WriteLine("---------------------------------------------------------------------------");
 
@@ -23,7 +24,12 @@ namespace SwapNumbers
             second_num = temp;
             
             Console.WriteLine("Numbers before Swap : first number=" + first_num +"\tsecond number=" + second_num);
+            }
+            else
+            {
+                Console.WriteLine("Input is invalid ");
 
+            }
 
         }
     }
