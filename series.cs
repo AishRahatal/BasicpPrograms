@@ -10,16 +10,23 @@ namespace harmonicseries
             
             Console.WriteLine("Enter number to get harmonic series:");
             int n = Convert.ToInt32(Console.ReadLine());
-          
-            Console.WriteLine("H(n)= ");
+           if (n > 0)
+            {
+            Console.Write("{0} ","H(n)= ");
             for ( int i=1; i<=n; i++)
             {
-                Console.WriteLine("1/" + i);
+               Console.Write("{0} ","1/"+ i);
                 if (i != n)
-                Console.WriteLine("+");
+                 Console.Write("{0}","+");;
 
 
             }
+            }
+            else
+              {
+                Console.WriteLine("Input is invalid ");
+
+              }
         }
 
      
