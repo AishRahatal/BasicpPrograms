@@ -16,6 +16,8 @@ namespace Largestnumber
             int tnum = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("-------------------------------------");
            //int large;
+            if (fnum > 0 || snum > 0 || tnum > 0)
+            {
             if (fnum > snum && fnum > tnum)
             { 
                 Console.WriteLine("Largest NUmber = " + fnum);
@@ -33,8 +35,19 @@ namespace Largestnumber
                         Console.WriteLine("Largest NUmber = " + tnum);
 
                  }
-                
+                else
+                {
+                    Console.WriteLine("All numbers are same ");
 
+                }
+                
+            }
+            else
+            {
+                Console.WriteLine("Input is invalid ");
+
+            }
+                
 
         }
 
