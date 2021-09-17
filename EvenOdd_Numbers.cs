@@ -13,7 +13,9 @@ namespace EvenOdd
 
             float remainder = num % 2;
             Console.WriteLine("-------------------------------------");
-
+            
+          if (num > 0)
+          {
             if (remainder == 0)
             {
                 Console.WriteLine(num + " is an Even nmber");
@@ -23,7 +25,12 @@ namespace EvenOdd
             {
                 Console.WriteLine(num + " is an Odd number");
             }
+         }
+            else
+            {
+                Console.WriteLine("Input is invalid ");
 
+            }
 
         }
     }
